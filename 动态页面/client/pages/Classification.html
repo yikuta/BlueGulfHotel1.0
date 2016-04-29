@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客房分类</title>
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./../css/default.css"><!--按钮样式-->
+    <link rel="stylesheet" type="text/css" href="./../css/styles.css"><!--按钮样式-->
+    <link href="./../css/classification.css" rel="stylesheet"><!--导航页面样式-->
+</head>
+<body>
+<!--sign start-->
+<%-include('sign.html')%>
+<!--sign end-->
+<div class="all">
+    <div class="headerbox">
+    <%-include('header.html')%>
+    </div>
+<!--header end-->
+    <!--房间类型一-->
+    <div id="bigBox">
+        <div class="c_title">
+            <h3>ROOMS IN BULE GULF HOTEL</h3>
+            <span></span>
+            <h3>我们的房间</h3>
+        </div>
+        <div id="c_t">
+            <div id="classifcation">
+                <!-- 代码 开始 -->
+                <div class="tv_hot fl">
+                    <a class="avatar" target="_blank" >
+                        <!--<img src="./../images/type_room1.jpg">-->
+                        <img src="<%=r_roomtype1Src%>">
+                    </a>
+                </div>
+            </div>
+            <div id="wzk">
+                <div id="wz">
+                    <!--<h2>豪华客房</h2>-->
+                    <h2><%=r_roomtype1Name%></h2>
+                    <!--<p id="p1">内有卫生间和其他附属设备组成。房内设一张单人床。</p>-->
+                    <p><%=r_roomtype1Introduce%></p>
+                    <!--使用button1，记得引入css-->
+                    <!--<p>CNY：<span>1200</span></p>-->
+                    <p>CNY：<span><%=r_roomtype1Money%></span></p>
+                    <a href="/datapage.html?id=1" class="btn btn-1">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        进入详情>><!--这里是按钮文字内容-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--房间类型二-->
+        <div id="c_t1">
+            <div id="wzk1">
+                <div id="wz1">
+                    <h2><%=r_roomtype2Name%></h2>
+                    <p><%=r_roomtype2Introduce%></p>
+                    <!--使用button1，记得引入css-->
+                    <p>CNY：<span><%=r_roomtype2Money%></span></p>
+                    <a href="/datapage.html?id=2" class="btn btn-1">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        进入详情>><!--这里是按钮文字内容-->
+                    </a>
+                </div>
+            </div>
+            <div id="classifcation1">
+                <!-- 代码 开始 -->
+                <div class="tv_hot fl">
+                    <a class="avatar" target="_blank" >
+                        <img src="<%=r_roomtype2Src%>">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!--房间类型三-->
+        <div id="c_t2">
+            <div id="classifcation2">
+                <!-- 代码 开始 -->
+                <div class="tv_hot fl">
+                    <a class="avatar" target="_blank" >
+                        <img src="<%=r_roomtype3Src%>">
+                    </a>
+                </div>
+            </div>
+            <div id="wzk2">
+                <div id="wz2">
+                    <h2><%=r_roomtype3Name%></h2>
+                    <p><%=r_roomtype3Introduce%></p>
+                    <!--使用button1，记得引入css-->
+                    <p>CNY：<span><%=r_roomtype3Money%></span></p>
+                    <a href="/datapage.html?id=3" class="btn btn-1">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        进入详情>><!--这里是按钮文字内容-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--房间类型四-->
+        <div id="c_t3">
+            <div id="wzk3">
+                <div id="wz3">
+                    <h2><%=r_roomtype4Name%></h2>
+                    <p><%=r_roomtype4Introduce%></p>
+                    <!--使用button1，记得引入css-->
+                    <p>CNY：<span><%=r_roomtype4Money%></span></p>
+                    <a href="/datapage.html?id=4" class="btn btn-1">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        进入详情>><!--这里是按钮文字内容-->
+                    </a>
+                </div>
+            </div>
+            <div id="classifcation3">
+                <!-- 代码 开始 -->
+                <div class="tv_hot fl">
+                    <a class="avatar" target="_blank" >
+                        <img src="<%=r_roomtype4Src%>">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!--房间类型五-->
+        <div id="c_t4">
+            <div id="classifcation4">
+                <!-- 代码 开始 -->
+                <div class="tv_hot fl">
+                    <a class="avatar" target="_blank" >
+                        <img src="<%=r_roomtype5Src%>">
+                    </a>
+                </div>
+            </div>
+            <div id="wzk4">
+                <div id="wz4">
+                    <h2><%=r_roomtype5Name%></h2>
+                    <p><%=r_roomtype5Introduce%> </p>
+                    <!--使用button1，记得引入css-->
+                    <p>CNY：<span><%=r_roomtype5Money%></span></p>
+                    <a href="/datapage.html?id=5" class="btn btn-1">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        进入详情>><!--这里是按钮文字内容-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--房间类型六-->
+        <div id="c_t5">
+            <div id="classifcation5">
+                <!-- 代码 开始 -->
+                <div class="tv_hot fl">
+                    <a class="avatar" target="_blank" >
+                        <img src="<%=r_roomtype6Src%>">
+                    </a>
+                </div>
+            </div>
+            <div id="wzk5">
+                <div id="wz5">
+                    <h2><%=r_roomtype6Name%></h2>
+                    <p><%=r_roomtype6Introduce%> </p>
+                    <!--使用button1，记得引入css-->
+                    <p>CNY：<span><%=r_roomtype6Money%></span></p>
+                    <a href="/datapage.html?id=6" class="btn btn-1">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        进入详情>><!--这里是按钮文字内容-->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--页脚-->
+    <%-include('footer.html')%>
+
+</div>
+<script src="./../js/isLogin.js"></script>
+<script src="./../js/classification.js"></script>
+</body>
+</html>

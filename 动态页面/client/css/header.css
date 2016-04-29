@@ -1,0 +1,97 @@
+/*header start*/
+.headerbox{
+    width: 100%;
+    height: 121px;
+}
+.header,.footer li,a{
+    font-family: "微软雅黑";
+    color: #999999;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow:0 3px 7px #999;
+    z-index: 997;
+    transition: all .5s ease-out;
+}
+.header div{
+    width: 100%;
+    height: 60px;
+}
+.header div:first-child ul{
+    width: 960px;
+    margin: 0 auto;
+}
+.header div:first-child{
+    border-bottom: 1px solid #999999;
+}
+.header div li{
+    float: left;
+    line-height: 60px;
+}
+.header div:first-child li{
+    display: inline-block;
+    text-align: center;
+    width: 320px;
+    height: 60px;
+}
+.header div:first-child li:last-child span{
+    cursor: pointer;
+}
+.header div:first-child li:last-child span:hover{
+    color: #87CEEB;
+}
+.header div:first-child li:nth-of-type(2){
+    background: #87CEEB;
+}
+.header div:first-child li:nth-of-type(2) span{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.header div:first-child li:nth-of-type(2) img{
+    vertical-align: middle;
+}
+.header div:first-child li:nth-of-type(3) span{
+    margin: 0 5px;
+}
+.header div:first-child li:nth-of-type(3) a{
+    margin: 0 5px;
+}
+.header div:first-child li:nth-of-type(3) :hover{
+    color: #87CEEB;
+}
+/*页头下半部分*/
+.header div:nth-of-type(2) ul{
+    width: 422px;
+    margin: 0 auto;
+}
+.header div:nth-of-type(2) li{
+    font-size: 14px;
+    padding-right:30px;
+    padding-left:30px;
+    position: relative;
+    cursor: pointer;
+}
+.header div:nth-of-type(2) li:hover{
+    color: #87CEEB;
+}
+.header div:nth-of-type(2) li:hover .nav_borders{
+    height: 24px;
+}
+.header div:nth-of-type(2) li div.nav_borders{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -12px;
+    border-bottom:none;
+    border-left:1px solid #999999;
+    border-right: 1px solid #999999;
+    transition: all .3s ease;
+}
+/*header end*/

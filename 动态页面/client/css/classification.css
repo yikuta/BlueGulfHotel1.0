@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family:"微软雅黑";
+}
+
+#bigBox{
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+#bigBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#bigBox p{
+    padding: 0 10%;
+}
+#bigBox h2{
+    margin-top: 55px;
+}
+.c_title{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.c_title h3{
+    font-size: 36px;
+    font-weight: 100;
+    color: #666666;
+}
+.c_title >h3:nth-of-type(2){
+    font-size: 24px;
+}
+.c_title span{
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #666666;
+}
+.headerbox{
+    width: 100%;
+    height: 121px;
+    position: relative;
+}
+
+#c_t{
+    width: 100%;
+    height: 374px;
+    margin-left: 1349px;
+    transition: all 1s;
+    /*float: left;*/
+    /*border: 1px solid blue;*/
+}
+#classifcation{
+    width: 50%;
+    height: 374px;
+    /**/
+    float: left;
+    /*border: 1px solid blue;*/
+}
+#wzk{
+    width: 50%;
+    height: 300px;
+    /*margin-top: 55px;*/
+    text-align: center;
+    line-height:45px;
+    float: right;
+    /*border: 1px solid blue;*/
+}
+
+
+#wz a{
+    margin-top: 30px;
+    text-decoration: none;
+}
+#c_t1{
+    width: 100%;
+    height: 374px;
+    margin-left: -1349px;
+    transition: all 1s;
+    /*float: left;*/
+    /*border: 1px solid blue;*/
+}
+#classifcation1{
+    width: 50%;
+    height: 374px;
+
+    float: right;
+}
+#wzk1{
+    width: 50%;
+    height: 300px;
+    /*margin-top: 55px;*/
+    text-align: center;
+    line-height:45px;
+    float: left;
+    /*border: 1px solid blue;*/
+}
+
+#wz1 a{
+    margin-top: 30px;
+    text-decoration: none;
+}
+#c_t2{
+    width: 100%;
+    height: 374px;
+    margin-left:1349px;
+    transition: all 1s;
+    /*float: left;*/
+    /*border: 1px solid blue;*/
+}
+#classifcation2{
+    width: 50%;
+    height: 374px;
+
+    float: left;
+}
+#wzk2{
+    width: 50%;
+    height: 300px;
+    /*margin-top: 55px;*/
+    text-align: center;
+    line-height:45px;
+    float: right;
+    /*border: 1px solid blue;*/
+}
+
+#wz2 a{
+    margin-top: 30px;
+    text-decoration: none;
+}
+#c_t3{
+    width: 100%;
+    height: 374px;
+    margin-left: -1349px;
+    transition: all 1s;
+    /*float: left;*/
+    /*border: 1px solid blue;*/
+}
+#classifcation3{
+    width:50%;
+    height: 374px;
+
+    float: right;
+}
+#wzk3{
+    width: 50%;
+    height: 300px;
+    /*margin-top: 55px;*/
+    text-align: center;
+    line-height:45px;
+    float: left;
+    /*border: 1px solid blue;*/
+}
+
+#wz3 a{
+    margin-top: 30px;
+    text-decoration: none;
+}
+#c_t4{
+    width: 100%;
+    height: 374px;
+    margin-left: 1349px;
+    transition: all 1s;
+    /*float: left;*/
+    /*border: 1px solid blue;*/
+}
+#classifcation4{
+    width: 50%;
+    height: 374px;
+
+    float: left ;
+}
+#wzk4{
+    width: 50%;
+    height: 300px;
+    /*margin-top: 55px;*/
+    text-align: center;
+    line-height:45px;
+    float: right;
+    /*border: 1px solid blue;*/
+}
+
+#wz4 a{
+    margin-top: 30px;
+    text-decoration: none;
+}
+#c_t5{
+    width:100%;
+    height: 374px;
+    margin-left: -1349px;
+    transition: all 1s;
+    /*float: left;*/
+    /*border: 1px solid blue;*/
+}
+#classifcation5{
+    width: 50%;
+    height: 374px;
+    float: right;
+}
+#wzk5{
+    width: 50%;
+    height: 300px;
+    /*margin-top: 55px;*/
+    text-align: center;
+    line-height:45px;
+    float: left;
+    /*border: 1px solid blue;*/
+}
+
+#wz5 a{
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+/*移入图片放大*/
+.tv_hot {
+    width: 674px;
+}
+
+.avatar {
+    position: relative;
+}
+.tv_hot .avatar {
+    display: block;
+    height: 374px;
+    overflow: hidden;
+    width: 674px;
+}
+.tv_hot .avatar img {
+    height: 374px;
+}
+.avatar:after {
+    bottom: 0;
+    left: 5px;
+    position: absolute;
+    z-index: 10;
+}
+.avatar:hover, .zhuti .avatar:hover, .bbsinner .avatar:hover {
+    box-shadow: 0 0 10px gray;
+}
+.avatar:hover img, .zhuti .avatar:hover img, .bbsinner .avatar:hover img {
+    transform: scale(1.2);
+    transition: all 1s ease 0s;
+    -webkit-transform: scale(1.2);
+}

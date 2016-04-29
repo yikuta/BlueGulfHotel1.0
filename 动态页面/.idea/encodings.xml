@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/client/css/about.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/css/default.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/css/footer.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/css/header.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/css/history.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/css/home.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/css/sign.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/css/styles.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/images/about_banner.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/images/history_img" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/images/home_hotel.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/images/home_room.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/images/home_services_SPA.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/images/home_services_fitness.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/images/home_services_yoga.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/images/home_suite.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/images/logo-blue.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/images/logo.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/js/about.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/js/header.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/js/history.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/js/home.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/js/isLogin.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/js/jquery.easing.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/js/jquery.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/js/jquery.mousewheel.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/js/sign.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/media/home_video.mp4" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/pages/about.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/pages/footer.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/pages/header.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/pages/history.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/pages/home.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/pages/map.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/pages/order.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/pages/sign.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myexpress.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/DAO" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/DAO/roomsDao.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/node_modules" charset="UTF-8" />
+  </component>
+</project>

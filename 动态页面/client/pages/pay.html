@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>pay</title>
+		<link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/jquery.selectlist.css">
+		<link rel="stylesheet" href="../css/pay.css" />
+		<!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">-->
+
+	</head>
+	<body>
+	<!--sign start-->
+	<%-include('sign.html')%>
+	<!--sign end-->
+	<div class="all">
+		<!--header start-->
+		<div class="headerbox">
+		<%-include('header.html')%>
+		</div>
+		<!--header end-->
+		<!--内容-->
+		<div class="p_body">
+			<!--预订后的房间细节-->
+			<div class="p_booked">
+				<h3>你的预订</h3>
+				<!--<form action="/p_pay.do" method="get" id="p_payid">-->
+					<img src="<%=p_leftSrc%>">
+					<p><%=p_leftName%></p>
+					<ul>
+						<li>入住日期：<span><%=p_leftStart%></span></li>
+						<li>退房日期：<span><%=p_leftCheckOut%></span></li>
+						<!--<li>入住期间：<span>3晚</span></li>-->
+					</ul>
+
+					<div>
+						<p>Room1</p>
+						<p>成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人： <span><%=p_leftAdult%></span></p>
+						<p>小&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;孩： <span><%=p_leftKid%></span></p>
+						<p>房间类型：<span><%=p_leftName%></span></p>
+					</div>
+					<!--<a href="order.html">修改</a>-->
+					<ul>
+						<li>金 额： &nbsp;<span><%=p_leftMoney%></span></li>
+					</ul>
+				<!--</form>-->
+				<p>支付方式：</p>
+				<select id="salary" name="salary">
+					<option value="1">支付宝</option>
+					<option value="2">微信支付</option>
+					<option value="3">VISA</option>
+				</select>
+			</div>
+			<!--客户信息-->
+			<div class="p_infor">
+				<h3>入住人信息</h3>
+					<form action="/p_checkin.do" method="get" id="p_checkIn">
+						<p>姓名</p>
+						<input type="text" onblur="kong(this)" name="checkInName"/><span class="p_prompt" style="font-size: 12px;color: red;visibility: hidden">不能为空</span>
+						<p>邮箱</p>
+						<input type="text" onblur="kong(this)" name="checkInEmail" /><span class="p_prompt" style="font-size: 12px;color: red;visibility: hidden">不能为空</span>
+						<p>证件号</p>
+						<input type="text" onblur="kong(this)" name="checkInIdNum" /><span class="p_prompt" style="font-size: 12px;color: red;visibility: hidden">不能为空</span>
+						<p>电话</p>
+						<input type="text" onblur="kong(this)" name="checkInTel" /><span class="p_prompt" style="font-size: 12px;color: red;visibility: hidden">不能为空</span>
+						<p>地址</p>
+						<input type="text"  name="checkInAddress"/>
+						<p>备注（可选）</p>
+						<textarea  name="checkInMarks"></textarea>
+
+						<input type="text" name="p_leftorderid" value="<%=p_leftorderid%>" style="display: none">
+					</form>
+				<span id="point" style="color: red;display: none">前四项不能为空</span>
+				<div>
+					<p>隐私条款</p>
+					<p>我们非常重视房客的隐私权。 请检视我们的隐私政策 。</p>
+					<p>我们致力于保护您的个人隐私。当您使用本网站而被要求提供某些信息时，请放心，该信息只会
+依照本站隐私申明所使用，我们将遵守本站隐私政策來保护您所提供的资料。</p>
+					<input type="checkbox" checked id="p_checkbox"/>
+					<p>请确认您已经阅读并了解有关您行程的收费方式及细则。 </p>
+					
+				</div>
+				<!--<input type="button" value="确认预订" />-->
+				<a href="javascript:p_checkin()" class="btn btn-1">
+					<svg>
+						<rect x="0" y="0" fill="none" width="100%" height="100%" />
+					</svg>
+					确定预订<!--这里是按钮文字内容-->
+				</a>
+			</div>
+		</div>
+		<!--footer start-->
+		<%-include('footer.html')%>
+		<!--footer end-->
+	</div>
+		<script src="../js/isLogin.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/jquery.selectlist.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('select').selectlist({
+					zIndex: 10,
+					width: 178,
+					height: 30
+				});		
+			})
+		</script>
+		<script src="../js/pay.js"></script>
+	</body>
+</html>

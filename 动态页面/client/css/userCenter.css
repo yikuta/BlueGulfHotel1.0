@@ -1,0 +1,250 @@
+@font-face {
+
+}
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family:"Microsoft YaHei UI Light";
+    color: #666666;
+    font-weight: 400;
+}
+/*usernameBox start*/
+.u_usernameBox{
+    max-width: 30%;
+    margin: 30px auto;
+    text-align: center;
+}
+.u_username{
+    font-size: 20px;
+}
+.u_usernameUnderLine{
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: rgb(0,0,0);
+    margin: 20px auto;
+}
+/*usernameBox end*/
+/*infBox start*/
+
+.u_infBox{
+    width: 960px;
+    font-size: 0;
+    position: relative;
+    left: 50%;
+    margin-left: -480px;
+}
+/*infTab start*/
+.u_infTab{
+    display: inline-block;
+    width: 190px;
+    border: 1px solid #eaeaea;
+    height: 386px;
+    background: #fafafa;
+}
+.u_infTab h2{
+    display: inline-block;
+    width: 166px;
+    height: 60px;
+    padding-left: 24px;
+    line-height: 60px;
+    font-size: 16px;
+}
+.u_infTab li{
+    padding-left: 48px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.u_infTab li:hover{
+    color:#030303;
+    background: #eaeaea;
+}
+/*infTab end*/
+/*userinf start*/
+.u_userInf{
+    vertical-align: top;
+    display: inline-block;
+    width: 766px;
+    border: 1px solid #eaeaea;
+    transition: all .9s ease;
+}
+/*infTitle start*/
+.u_infTitle{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #eaeaea;
+}
+.u_infTitle p{
+    display: inline-block;
+}
+.u_infTitle h3{
+    display: inline-block;
+    padding-left:36px;
+    font-size: 16px;
+}
+/*infTitle end*/
+/*infContent start*/
+.u_infContent{
+    font-size: 14px;
+}
+.u_infContent div{
+    width: 100%;
+    display: inline-block;
+}
+.u_infContent>div{
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px;
+    margin-bottom: 46px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.u_infContent>div:first-child{
+    margin-top: 46px;
+    cursor: auto;;
+}
+.u_infContent h4{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left:60px;
+    width: 120px;
+}
+.u_infContent p{
+    display: inline-block;
+}
+.u_infContent i{
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+.u_infContent .u_infChange{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+}
+.u_infShow{
+    padding-bottom: 29px;
+    border-bottom: 1px solid #eaeaea;
+}
+.u_infChange p{
+    width: 100%;
+    margin:10px 0;
+}
+.u_infChange p input{
+    width: 300px;
+    height: 16px;
+    padding: 10px;
+    border: none;
+}
+.u_infChange p:first-child{
+    margin-top: 30px;
+}
+.u_infChange p:last-child{
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 54px;
+    line-height: 54px;
+    background-color: #efefef;
+}
+.u_infChange p:last-child span{
+    display: inline-block;
+    padding-right: 10px;
+    color:crimson;
+}
+.u_infChange p:last-child input{
+    float: right;
+    width: 120px;
+    height: 54px;
+    color: white;
+    border: none;
+    letter-spacing:2px;
+    background: #87CEEB;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.u_infChange p:last-child input:hover{
+    background: #2fa0ec;
+}
+/*userinf end*/
+/*orderinf start*/
+.u_orderInf{
+    vertical-align: top;
+    display: none;
+    width: 766px;
+    font-size: 14px;
+    border: 1px solid #eaeaea;
+    transition: all .9s ease;
+}
+.u_orderInfContent{
+    overflow: hidden;
+}
+.u_orderInfContent img{
+    width: 138px;
+    height: 76px;
+    object-fit: cover;
+}
+.u_orderInf div{
+    width: 100%;
+}
+.u_orderInf ul{
+    padding-left: 3%;
+}
+.u_orderInf li{
+    float: left;
+}
+.u_orderInf_idBox{
+    height: 60px;
+    line-height: 60px;
+    background: #eaeaea; ;
+}
+.u_orderInf_idBox h3{
+    padding-left:3%;
+}
+.u_orderInf_items{
+    height: 60px;
+    line-height: 60px;
+}
+.u_orderInf_items li:first-child{
+    width: 55%;
+}
+.u_orderInf_items li+li{
+    width: 15%;
+    text-align: center;
+}
+.u_orderInf_data{
+    height: 76px;
+    line-height: 76px;
+    margin-bottom:20px;
+}
+.u_orderInf_data li:first-child{
+    width: 19%;
+}
+.u_orderInf_data li+li{
+    width: 15%;
+    text-align: center;
+}
+.u_orderInf_data li:nth-child(2){
+    text-align: left;
+    width: 36%;
+}
+.u_order_null{
+    height: 386px;
+    line-height: 386px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/*infBox end*/
+

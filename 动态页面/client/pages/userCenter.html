@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蓝湾酒店-个人中心</title>
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link href="../font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/userCenter.css" rel="stylesheet">
+</head>
+<body>
+<!--sign start-->
+<%-include('sign.html')%>
+<!--sign end-->
+<div class="all">
+    <!--header start-->
+    <div class="headerbox">
+        <%-include('header.html')%>
+    </div>
+    <!--header end-->
+    <div class="u_usernameBox">
+        <div class="u_username">
+            <p>欢迎您，<%=u_topName%></p>
+        </div>
+        <span class="u_usernameUnderLine"></span>
+    </div>
+    <div class="u_infBox">
+        <div class="u_infTab">
+            <h2>个人中心</h2>
+            <ul>
+                <li class="u_infTab_myCount"><i class="fa fa-credit-card"></i>我的账户</li>
+                <li class="u_infTab_myOrder"><i class="fa fa-file-text-o"></i>我的订单</li>
+            </ul>
+        </div>
+        <div class="u_userInf">
+            <div class="u_infTitle">
+                <h3>我的账户</h3>
+            </div>
+            <div class="u_infContent">
+                <div class="u_inf_userIdBox">
+                    <div class="u_infShow u_inf_userIdBox_show">
+                        <h4><i class="fa fa-user"></i>用户ID</h4>
+                        <p class="u_inf_userID"><%=u_topId%></p>
+                    </div>
+                </div>
+                <div class="u_inf_userPasswordBox">
+                    <div class="u_infShow u_inf_userPasswordBox_show"  onclick="showChangePasswordBox()">
+                        <h4><i class="fa fa-lock"></i>登录密码</h4>
+                        <p>为保障用户账户安全，建议定期更改密码</p>
+                        <span><i class="fa fa-angle-double-down"></i></span>
+                    </div>
+                    <div class="u_infChange u_inf_userPasswordBox_change">
+                        <form id="u_changePassword" action="/changePassword.do" method="post">
+                            <p><input type="password" name="u_oldPassword" placeholder="请输入旧密码" required="required" onblur="u_yanzhengoldPassword()"></p>
+                            <p><input type="password" name="u_newPassword" placeholder="请输入新密码" required="required"></p>
+                            <p><input type="password" name="u_newPassword_repeat" placeholder="再次输入新密码" onkeyup="u_yanzhengnewPassword()"></p>
+                            <p><span class="u_status"></span><input type="button" value="确认" onclick="changPassword()"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="u_inf_userTelBox">
+                    <div class="u_infShow u_inf_userTelBox_show" onclick="showChangeTelBox()">
+                        <h4><i class="fa fa-mobile fa-lg"></i>手机号码</h4>
+                        <p class="u_inf_userID"><%=u_topTel%></p>
+                        <span><i class="fa fa-angle-double-down"></i></span>
+                    </div>
+                    <div class="u_infChange u_inf_userTelBox_change">
+                        <form id="u_changeTel" action="/u_changeTel.do" method="post">
+                            <p><input type="text" name="u_oldTel" placeholder="请输入旧手机号码" required="required"></p>
+                            <p><input type="text" name="u_newTel" placeholder="请输入新手机号码" onkeyup="checknewTel()" required="required"></p>
+                            <p><span class="u_status"></span><input type="button" value="确认" onclick="changeTel()"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="u_inf_userEmailBox">
+                    <div class="u_infShow u_inf_userEmailBox_show" onclick="showChangeEmailBox()">
+                        <h4><i class="fa fa-envelope-o"></i>常用邮箱</h4>
+                        <p class="u_inf_userID"><%=u_topEmail%></p>
+                        <span><i class="fa fa-angle-double-down"></i></span>
+                    </div>
+                    <div class="u_infChange u_inf_userEmailBox_change">
+                        <form id="u_changeEmail" action="/u_changeEmail.do" method="post">
+                            <p><input type="text" name="u_oldEmail" placeholder="请输入旧邮箱"></p>
+                            <p><input type="text" name="u_newEmail" placeholder="请输入新邮箱" onkeyup="checknewEmail()"></p>
+                            <p><span class="u_status"></span><input type="button" value="确认" onclick="changeEail()"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="u_orderInf">
+        </div>
+    </div>
+    <!--sign start-->
+    <%-include('footer.html')%>
+    <!--sign end-->
+</div>
+<script src="../js/isLogin.js"></script>
+<script src="../js/userCenter.js"></script>
+</body>
+</html>

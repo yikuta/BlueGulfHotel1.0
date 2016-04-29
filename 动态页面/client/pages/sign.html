@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/sign.css">
+</head>
+<body>
+<div class="overlay" onclick="closeSign()"></div>
+<div class="sign">
+    <div class="part loginPart">
+        <div class="userIcon"><i class="fa fa-user"></i></div>
+        <p class="status"></p>
+        <form id="login" action="/login.do" method="post">
+            <p><input name="username" type="text" placeholder="用户名" required="required" onblur="login_check_username();"></p>
+            <p><input name="password" type="password" placeholder="密码" required="required"></p>
+            <p><input class="submit" type="submit" value="登录" onclick="checkLogin();return false;"></p>
+            <hr>
+            <p>尚未成为我们的会员？请点此&nbsp;<i onclick="switchToReg()">前往注册</i></p>
+        </form>
+    </div>
+    <div class="part registerPart">
+        <h3>注册</h3><p class="status"></p>
+        <form id="register" action="/register.do" method="post">
+            <p><input name="username" type="text" placeholder="用户名" required="required" onblur="register_check_username()"></p>
+            <p><input name="userEmail" type="text" placeholder="常用邮箱" required="required" onblur="register_check_email()"></p>
+            <p><input name="userTel" type="text" placeholder="手机号" required="required" onblur="register_check_tel()"></p>
+            <p><input name="password" type="password" placeholder="密码" required="required" onblur="register_check_password()"></p>
+            <p><input name="password_repeat" type="password" placeholder="确认密码" required="required" onkeyup="register_check_passwordRepeat()"></p>
+            <p><input class="submit" type="button" value="确认注册" onclick="checkRegister();return false;"></p>
+            <hr>
+            <p>已经成为我们的会员？请点此&nbsp;<i onclick="switchToLogin()">返回登录</i></p>
+        </form>
+    </div>
+</div>
+<script src="../js/sign.js"></script>
+</body>
+</html>

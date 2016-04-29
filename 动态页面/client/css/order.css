@@ -1,0 +1,85 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: "Microsoft YaHei UI Light";
+}
+
+
+/*预订部分*/
+.wrap {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.wrap .bg {
+    width: 100%;
+    height: 532px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url("../images/bg.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#oContent{
+    position: relative;
+    z-index: 1;
+    /*top:120px;*/
+    /*margin-top:120px;*/
+    width: 100%;
+    height: 532px;
+    /*background-image: url("../images/bg.jpg") ;*/
+}
+.whiteBg{
+    position:absolute;
+    top:50px;
+    z-index: 5;
+    width: 330px;
+    height: 430px;
+    margin-left: 874px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius:5px;
+}
+.whiteBg p{ margin-left: 50px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+/*text-align: center;*/
+}
+h4{margin:30px 50px;}
+.whiteBg p:nth-child(2){
+    margin: 12px 18px;
+    width: 930px;
+    height: 1px;
+    background-color: #000;}
+ .whiteBg input[type="text"]{
+     width: 230px;
+    margin-left: 50px;
+     margin-top: 5px;
+     margin-bottom: 20px;
+    border-top: 0px ;
+    border-right: 0px ;
+    border-left: 0px;
+    border-bottom: 1px solid #000;
+    background-color:transparent;
+    text-align: center;
+    /*border:none;*/
+    outline:none;}
+
+.leftSidebar{float:left;
+    width: 250px;
+    height: 196px;}
+
+.btn-1{
+    margin-left: 86px;
+    margin-top: 295px;
+}
+
+
+
+

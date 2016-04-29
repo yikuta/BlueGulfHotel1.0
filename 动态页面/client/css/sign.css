@@ -1,0 +1,99 @@
+/*sign start*/
+.all{
+    position: relative;
+    left: 0;
+    transition:all .5s ease-out;
+}
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    right: -100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 998;
+    visibility:hidden;
+    transition: all .5s ease-out;
+}
+.sign{
+    position: fixed;
+    background:#efefef;
+    width: 450px;
+    height: 100%;
+    right: -450px;
+    color: #333;
+    z-index: 999;
+    transition: all .5s ease-out;
+}
+.sign .part{
+    position: absolute;
+    width: 300px;
+    margin: 60px 75px;
+    transition: all .5s ease-in;
+}
+
+.sign .loginPart{
+    z-index: 1;
+    opacity: 1;
+}
+.sign .registerPart{
+    z-index: 0;
+    opacity: 0;
+}
+.sign input{
+    width: 255px;
+    height: 20px;
+    padding: 10px;
+    padding-right: 35px;
+    background: white;
+    border: none;
+}
+.sign p {
+    margin-bottom: 20px;
+}
+.sign h3{
+    display: inline-block;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.sign p.status{
+    line-height: 20px;
+    font-size: 16px;
+    color:#F56653;
+    transition: all .3s ease-out;
+}
+.sign hr{
+    margin-bottom: 20px;
+}
+.sign p i{
+    cursor: pointer;
+    color: #87CEEB;
+}
+.sign .submit{
+    width: 300px;
+    height: 40px;
+    padding: 0;
+    color: #87CEEB;
+    background: none;
+    border: 1px solid #87CEEB;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.sign .submit:hover{
+    background:#87CEEB;
+    color: white;
+}
+.sign .userIcon{
+    display: inline-block;
+    background: #cdf1ff;
+    color: #87CEEB;
+    width: 64px;
+    height: 64px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 32px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+/*sign end*/

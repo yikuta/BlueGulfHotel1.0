@@ -1,0 +1,156 @@
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Microsoft YaHei UI Light";
+}
+/*main start*/
+/*banner start*/
+.a_banner{
+    width: 100%;
+    height: 490px;
+    /*overflow: hidden;*/
+    position: relative;
+}
+.a_bannerCover_text{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    margin-left: -265px;
+    letter-spacing: 1px;
+}
+.a_bannerCover_text p:first-child{
+    text-transform: uppercase;
+    font-size: 36px;
+    opacity: 0;
+    animation: a_banner_text .9s ease forwards;
+}
+.a_bannerCover_text .a_bannerCover_line{
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    background: white;
+    animation: a_banner_line .9s ease;
+}
+.a_bannerCover_text p:last-child{
+    font-size: 24px;
+    opacity: 0;
+    animation: a_banner_text .9s ease forwards;
+}
+@keyframes a_banner_line {
+    from{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    to{
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+}
+@keyframes a_banner_text {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*banner end*/
+/*inf start*/
+.a_inf{
+    width: 960px;
+    /*text-align: center;*/
+    margin: 50px auto;
+}
+.a_inf div{
+    margin: 20px auto;
+}
+.a_inf h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.a_inf h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.a_inf p{
+    margin-bottom: 20px;
+}
+@keyframes a_inf_text {
+    from{
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+/*inf end*/
+/*history start*/
+.a_history{
+    width: 1180px;
+}
+/*history end*/
+/*map start*/
+.a_map{
+    width: 100%;
+    height: 580px;
+    position: relative;
+}
+.a_map_text{
+    width: 330px;
+    height: 500px;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    background: rgba(255,255,255,.9);
+}
+.a_map iframe{
+    width: 100%;
+    height: 580px;
+}
+.a_map_text_container{
+    width: 250px;
+    margin: 0 auto;
+}
+.a_map_text_container i{
+    font-size: 40px;
+    line-height: 80px;
+    color: #87CEEB;
+    display: block;
+    text-align: center;
+}
+.a_map_text_container h3{
+    font-size: 24px;
+}
+.a_map_text_container p:first-child{
+    font-size: 16px;
+}
+.a_map_text_container p{
+    margin: 10px 0;
+    font-size: 14px;
+}
+.a_map_text_container hr{
+    margin: 10px auto;
+}
+.a_map_text_container li{
+    margin: 10px 0;
+}
+.a_map_text_container li span{
+    display: inline-block;
+    height: 36px;
+    width: 50px;
+    font-size: 24px;
+    color: #87CEEB;
+    vertical-align: middle;
+}
+.a_map_text_container li p{
+    display: inline-block;
+    width: 175px;
+}

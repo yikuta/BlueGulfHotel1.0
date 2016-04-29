@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>datails</title>
+    <!--详情样式-->
+    <link rel="stylesheet" type="text/css" href="../css/datapage.css">
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/datapage2.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 625px;
+            height: 325px;
+
+        }
+    </style>
+</head>
+<body>
+<!--sign start-->
+<%-include('sign.html')%>
+<!--sign end-->
+<div class="all">
+    <!--header start-->
+    <div class="headerbox">
+        <%-include('header.html')%>
+    </div>
+    <!--header end-->
+
+
+<!--详情-->
+<div class="d_data">
+    <div class="d_datap"><br>
+        <div class="d_datap1">
+            <%=d_getName%>
+            <!--海景套房-->
+        </div>
+        <br>
+        <div class="d_datap2">
+            <%=d_getText%>
+            <!--明亮的色彩,现代设计和优雅的室内自然光线补充,酒店提供了35-40平方米高级海景房，有一个私人的露台和海景的阳台-->
+        </div>
+        <br>
+     </div>
+    <div class="d_large">
+        <!--<img src="../images/photo3.jpg" alt="图片加载失败">-->
+        <img src="<%=d_getBigSrc%>" alt="图片加载失败">
+    </div>
+    <!--设施和设备-->
+    <div class="d_facil"><br>
+        <div class="d_facilitytitle">
+            设施和设备
+        </div><br>
+        <div class="d_facility">
+            <ul>
+                <li><span>双人床</span></li><br>
+                <li><span>沙发</span></li><br>
+                <li><span>阳台</span></li>
+            </ul>
+        </div>
+        <div class="d_facility1">
+            <ul>
+                <li><span>浴缸</span></li><br>
+                <li><span>电话</span></li><br>
+                <li><span>有限电视</span></li>
+            </ul>
+        </div>
+        <div class="d_facility2">
+            <ul>
+                <li><span>电子保险箱</span></li><br>
+                <li><span>冰箱</span></li><br>
+                <li><span>吹风机</span></li>
+            </ul>
+        </div><br>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(<%=d_getSmall1%>)"></div>
+            <div class="swiper-slide" style="background-image:url(<%=d_getSmall2%>)"></div>
+            <div class="swiper-slide" style="background-image:url(<%=d_getSmall3%>)"></div>
+            <div class="swiper-slide" style="background-image:url(<%=d_getSmall4%>)"></div>
+            <div class="swiper-slide" style="background-image:url(<%=d_getSmall5%>)"></div>
+            <div class="swiper-slide" style="background-image:url(<%=d_getSmall6%>)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <!--<div class="swiper-pagination"></div>-->
+    </div>
+    <!--预定按钮-->
+    <div class="d_button">
+        <!--<a href="/order.html?o_id=<%=d_getRoomType%>" onclick="return yanzheng()" class="d_btn btn-1">-->
+            <a onclick="yanzheng()" class="d_btn btn-1">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%" />
+            </svg>
+            立即预定
+        </a>
+    </div>
+</div>
+    <!--footer start-->
+    <%-include('footer.html')%>
+    <!--footer end-->
+</div>
+</body>
+<script src="../js/isLogin.js"></script>
+<script>
+    function yanzheng(){
+        myAJAX("get","/yanzheng.do",true,"one="+1,function(){
+            var data=httpReq.responseText;
+            console.log(data);
+            console.log(httpReq.readyState);
+            console.log(httpReq.status);
+            if(httpReq.readyState==4&&httpReq.status==200){
+                console.log(data);
+                if(data!=null&&data!=undefined){
+                    window.location.href="/order.html";
+                }else{
+                    window.alert("请登录再进行之后操作！");
+                }
+            }
+        })
+    }
+</script>
+<script src="../js/js.js"></script>
+
+
+<!-- Swiper JS -->
+<script src="../js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        },
+        initialSlide:1
+    });
+</script>
+</html>
