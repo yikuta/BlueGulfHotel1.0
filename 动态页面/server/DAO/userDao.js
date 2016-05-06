@@ -1,7 +1,7 @@
 /**
  * Created by Lee on 2016-03-29.
  */
-var mysql=require("../node_modules/mysql");
+var mysql=require("../node_modules/mysql");     //加载mysql资源模块
 var mydatabase;
 function mydb(){
     mydatabase=mysql.createConnection({
@@ -13,7 +13,7 @@ function mydb(){
     });
     mydatabase.connect();
 }
-exports.userLogin=function (req,resp){
+exports.userLogin=function (req,resp){      //登录
     var username=req.body.username;
     var password=req.body.password;
     mydb();
@@ -26,7 +26,7 @@ exports.userLogin=function (req,resp){
     });
     mydatabase.end();
 };
-exports.userReg=function (req,resp) {
+exports.userReg=function (req,resp) {       //注册
     var username=req.body.username;
     var password=req.body.password;
     var tel=req.body.userTel;
@@ -41,7 +41,7 @@ exports.userReg=function (req,resp) {
     });
     mydatabase.end();
 };
-exports.checkUser=function(req,resp){
+exports.checkUser=function(req,resp){       //验证用户名
     var username=req.body.username;
     mydb();
     mydatabase.query("select * from t_user where u_username=?",[username],function(err,data){
@@ -49,7 +49,7 @@ exports.checkUser=function(req,resp){
     });
     mydatabase.end();
 };
-exports.checkLogin=function (req,resp){
+exports.checkLogin=function (req,resp){     //验证注册用户名重复
     var username=req.body.username;
     var password=req.body.password;
     mydb();
@@ -59,7 +59,7 @@ exports.checkLogin=function (req,resp){
     });
     mydatabase.end();
 };
-exports.isLogin=function (req,resp){
+exports.isLogin=function (req,resp){        //获取session中存的用户名
     var one=req.body.one;
     if(one==1){
         console.log(req.session.username);
@@ -70,7 +70,7 @@ exports.isLogin=function (req,resp){
         }
     }
 };
-exports.loginOut=function (req,resp){
+exports.loginOut=function (req,resp){       //注销
     req.session.username=null;
     resp.redirect("/home.html");
 }
