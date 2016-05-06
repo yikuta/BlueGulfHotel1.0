@@ -1,7 +1,7 @@
 /**
  * Created by m1308 on 2016/4/1.
  */
-var mysql=require("../node_modules/mysql");
+var mysql=require("../node_modules/mysql");     //加载mysql资源模块
 var mydatabase;
 function mydb(){
     mydatabase=mysql.createConnection({
@@ -45,7 +45,7 @@ exports.p_checkin=function (req,resp) {  //pay页面入住人信息录入数据�
     var checkInAddress=req.query.checkInAddress;
     var checkInMarks=req.query.checkInMarks;
 
-    var p_leftorderid=req.query.p_leftorderid;//获取进入pay页面得到的roomid值
+    var p_leftorderid=req.query.p_leftorderid;  //获取进入pay页面得到的roomid值
 
     //console.log(p_leftorderid);
     mydb();
