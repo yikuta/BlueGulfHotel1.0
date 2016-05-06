@@ -1,7 +1,7 @@
 /**
  * Created by m1308 on 2016/4/1.
  */
-var mysql=require("../node_modules/mysql");
+var mysql=require("../node_modules/mysql"); //加载mysql资源模块
 var mydatabase;
 function mydb(){
     mydatabase=mysql.createConnection({
@@ -84,7 +84,7 @@ exports.u_changeTel=function(req,resp){     //更改绑定电话
     mydatabase.end();
 }
 
-exports.u_changeEmail=function(req,resp){
+exports.u_changeEmail=function(req,resp){   //更改绑定邮箱
     var u_userName=req.session.username;
     var u_newEmail=req.body.u_newEmail;
     mydb();
