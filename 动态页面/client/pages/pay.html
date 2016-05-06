@@ -6,17 +6,16 @@
 		<link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/jquery.selectlist.css">
 		<link rel="stylesheet" href="../css/pay.css" />
-		<!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">-->
 
 	</head>
 	<body>
 	<!--sign start-->
-	<%-include('sign.html')%>
+	<%-include('sign.html')%>	<!--ejs加载登录注册模块-->
 	<!--sign end-->
 	<div class="all">
 		<!--header start-->
 		<div class="headerbox">
-		<%-include('header.html')%>
+		<%-include('header.html')%>		<!--ejs加载页头块-->
 		</div>
 		<!--header end-->
 		<!--内容-->
@@ -90,7 +89,7 @@
 			</div>
 		</div>
 		<!--footer start-->
-		<%-include('footer.html')%>
+		<%-include('footer.html')%>		<!--ejs加载页脚-->
 		<!--footer end-->
 	</div>
 		<script src="../js/isLogin.js"></script>
