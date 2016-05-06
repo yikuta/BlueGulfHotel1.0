@@ -37,17 +37,17 @@
 </head>
 <body>
 <!--sign start-->
-<%-include('sign.html')%>
+<%-include('sign.html')%>       <!--ejs加载登录注册模块-->
 <!--sign end-->
 <div class="all">
     <!--header start-->
     <div class="headerbox">
-        <%-include('header.html')%>
+        <%-include('header.html')%>     <!--ejs加载页头-->
     </div>
     <!--header end-->
 
 
-<!--详情-->
+<!--详情，ejs加载-->
 <div class="d_data">
     <div class="d_datap"><br>
         <div class="d_datap1">
@@ -116,12 +116,13 @@
     </div>
 </div>
     <!--footer start-->
-    <%-include('footer.html')%>
+    <%-include('footer.html')%>     <!--ejs加载页脚-->
     <!--footer end-->
 </div>
 </body>
 <script src="../js/isLogin.js"></script>
 <script>
+    // 验证用户是否登录
     function yanzheng(){
         myAJAX("get","/yanzheng.do",true,"one="+1,function(){
             var data=httpReq.responseText;
