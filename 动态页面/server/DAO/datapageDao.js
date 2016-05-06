@@ -1,7 +1,7 @@
 /**
  * Created by m1308 on 2016/4/1.
  */
-var mysql=require("../node_modules/mysql");
+var mysql=require("../node_modules/mysql");     //加载mysql资源模块
 var mydatabase;
 function mydb(){
     mydatabase=mysql.createConnection({
@@ -44,7 +44,7 @@ exports.datapage=function(req,resp){        //跳转到datapage页面
     mydatabase.end();
 };
 
-exports.d_yanzheng=function(req,resp){
+exports.d_yanzheng=function(req,resp){      //验证session是否有用户名
     var one=req.query.one;
     if(one==1){
         if(req.session.username!=null&&req.session.username!=undefined){
