@@ -1,8 +1,8 @@
 /**
  * Created by Administrator on 2016/3/30.
  */
-////灏佽 鍒涘缓鏁版嵁搴撹繛鎺�
-var mysql=require("../node_modules/mysql");
+//
+var mysql=require("../node_modules/mysql");     //加载mysql资源模块
 var mydatabase;
 function mydb(){
     mydatabase=mysql.createConnection({
