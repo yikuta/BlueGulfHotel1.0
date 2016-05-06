@@ -1,7 +1,7 @@
 /**
  * Created by m1308 on 2016/4/1.
  */
-var mysql=require("../node_modules/mysql");
+var mysql=require("../node_modules/mysql");     //加载mysql资源模块
 var mydatabase;
 function mydb(){
     mydatabase=mysql.createConnection({
